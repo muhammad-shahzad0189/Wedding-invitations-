@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f8e9e9">
+<title>Muhammad Shahzad — Wedding Invitation</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Great+Vibes&display=swap');
+:root{--rose:#713d4d;--ink:#33232a;--paper:#fffdf8;--pink:#ead9d0;--gold:#b18a4b;--plum:#452633}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#eadcda;color:var(--ink);font-family:'Cormorant Garamond',serif}
+button{font:inherit}.envelope-screen{min-height:100svh;display:grid;place-items:center;padding:24px;background:radial-gradient(ellipse at 50% 20%,#fff8f2,#e7cfd0 72%,#d5b9b8)}
+.envelope-wrap{text-align:center;width:min(420px,94vw)}.hint{font-size:17px;letter-spacing:2px;text-transform:uppercase;color:#806365;margin-bottom:28px}
+.envelope{height:250px;position:relative;background:#f9eeee;border:1px solid #d8bdb8;box-shadow:0 22px 45px #77595b35;cursor:pointer;perspective:900px}
+.envelope:before{content:"";position:absolute;inset:0;background:linear-gradient(145deg,transparent 49.5%,#ead6d4 50%,transparent 50.6%),linear-gradient(35deg,transparent 49.5%,#efdfdc 50%,transparent 50.6%);z-index:2}
+.flap{position:absolute;inset:0 0 auto;height:58%;background:#f4e5e2;clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;transition:transform 1s;z-index:3;border-top:1px solid #ddc4bf}
+.seal{position:absolute;z-index:4;left:50%;top:50%;transform:translate(-50%,-15%);width:62px;height:62px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 30%,#bd777b,#783d49 72%);color:#f9e8df;border:3px double #d7b08c;font-family:'Great Vibes';font-size:28px;box-shadow:0 4px 12px #613c443d}
+.envelope.open .flap{transform:rotateX(180deg)}.envelope.open .seal{opacity:0;transition:opacity .3s}
+.open-btn{margin-top:26px;border:1px solid #b9978f;background:#fff8f4;color:#765456;padding:12px 28px;border-radius:30px;letter-spacing:1.5px;cursor:pointer}
+main{display:none}.paper{max-width:520px;margin:28px auto;background:var(--paper);min-height:90vh;padding:48px 28px;position:relative;overflow:hidden;box-shadow:0 18px 55px #63484a22;text-align:center}
+.paper:before{content:"";position:absolute;inset:12px;border:1px solid #d8c1a7;pointer-events:none}.floral{font-size:26px;letter-spacing:7px;color:#b68b86}.bismillah{font-size:22px;margin:28px 0 14px}.script{font-family:'Great Vibes',cursive;color:#9c7475}.intro{font-size:25px;line-height:1.25}.names{font-family:'Great Vibes',cursive;font-size:clamp(58px,13vw,82px);line-height:1.05;color:#8b6265;margin:24px 0 10px}.amp{font-size:42px;color:#b89a78}.date{font-size:23px;letter-spacing:4px;margin:12px}.smallcaps{text-transform:uppercase;letter-spacing:3px;font-size:13px}.section{padding:34px 0;border-top:1px solid #ead9d2;margin-top:28px}.section h2{font-family:'Great Vibes';font-size:39px;font-weight:400;color:#9b7073;margin:0 0 18px}.copy{font-size:20px;line-height:1.45;max-width:390px;margin:12px auto}.countdown{display:flex;justify-content:center;gap:18px;margin:22px 0}.countdown div{min-width:55px}.countdown b{display:block;font-size:30px;font-weight:400}.countdown span{font-size:13px;letter-spacing:1px}.timeline{max-width:330px;margin:0 auto;text-align:left}.event{display:grid;grid-template-columns:82px 1fr;gap:16px;padding:12px 0;border-left:1px solid #c6a7a0;margin-left:40px;padding-left:22px;position:relative;font-size:20px}.event:before{content:"✿";position:absolute;left:-10px;top:14px;color:#b78383;background:var(--paper)}.event time{color:#946d6f}.address{font-size:19px;line-height:1.5}.map{display:inline-block;margin-top:15px;padding:10px 20px;border:1px solid #c9aaa1;border-radius:24px;color:#765456;text-decoration:none}.note{font-size:19px;line-height:1.5}.confirm{display:inline-block;margin:18px 0 0;padding:12px 24px;border-radius:26px;background:#9b7073;color:white;text-decoration:none}.footer{padding-top:30px;font-family:'Great Vibes';font-size:35px;color:#9b7073}
+@media(min-width:700px){.paper{margin:40px auto;padding:58px 50px}} 
+
+/* Premium invitation refresh */
+body{background:radial-gradient(ellipse at top,#f7eee4 0%,#dfd0c5 60%,#c8b6aa 100%);color:var(--ink)}
+.envelope-screen{background:radial-gradient(ellipse at 50% 12%,#fffaf0 0%,#ead9cd 58%,#c8aaa0 100%)}
+.hint{color:#51303a;font-weight:600;text-shadow:0 1px #fff}
+.envelope{background:linear-gradient(145deg,#fffaf2,#e9d8cb);border:1px solid #b18a4b;box-shadow:0 25px 60px #3d202c30, inset 0 0 0 7px #fff8ef}
+.envelope:after{content:"";position:absolute;inset:10px;border:1px solid #c5a36d;pointer-events:none;z-index:1}
+.flap{background:linear-gradient(145deg,#fff8ed,#e8d2c6);border-top:1px solid #b18a4b}
+.seal{background:radial-gradient(circle at 35% 30%,#a65b68,#4d2635 75%);border:3px double #e0c28a;color:#fff4df}
+/* Delicate gold wedding-card ornament on the envelope */
+.envelope-ornaments{position:absolute;inset:15px;z-index:5;pointer-events:none;color:#b18a4b;text-shadow:0 1px 0 #fff7e9,0 0 5px #d9bd8a88}
+.envelope-ornaments span{position:absolute;font-family:serif;line-height:1}
+.envelope-ornaments .corner{font-size:37px}
+.envelope-ornaments .tl{top:0;left:0}.envelope-ornaments .tr{top:0;right:0;transform:scaleX(-1)}
+.envelope-ornaments .bl{bottom:0;left:0;transform:scaleY(-1)}.envelope-ornaments .br{bottom:0;right:0;transform:scale(-1)}
+.envelope-ornaments .top-flourish,.envelope-ornaments .bottom-flourish{left:50%;transform:translateX(-50%);font-size:24px;letter-spacing:5px;white-space:nowrap}
+.envelope-ornaments .top-flourish{top:3px}.envelope-ornaments .bottom-flourish{bottom:3px}
+.envelope-ornaments:before,.envelope-ornaments:after{content:"";position:absolute;left:12%;right:12%;height:1px;background:linear-gradient(90deg,transparent,#c5a36d 20%,#e0c995 50%,#c5a36d 80%,transparent);opacity:.8}
+.envelope-ornaments:before{top:13px}.envelope-ornaments:after{bottom:13px}
+.seal{z-index:6}
+@media(max-width:480px){.envelope-ornaments .corner{font-size:31px}.envelope-ornaments .top-flourish,.envelope-ornaments .bottom-flourish{font-size:19px}}
+.open-btn{background:#4b2937;color:#fff8ed;border:1px solid #b18a4b;box-shadow:0 8px 20px #4b29372b;font-weight:600}
+.open-btn:hover,.confirm:hover{filter:brightness(1.12);transform:translateY(-2px)}
+.paper{background:linear-gradient(180deg,#fffdf8,#fff9f1);border:1px solid #c6a66e;box-shadow:0 22px 70px #38202c35}
+.paper:before{border:1px solid #c6a66e;inset:15px}
+.floral{color:#98703c;text-shadow:0 1px #fff}
+.bismillah{color:#432632;font-size:25px;font-weight:600;text-shadow:0 1px #fff}
+.intro,.copy,.smallcaps,.date,.address,.note,.event,.countdown span{color:#33232a;text-shadow:none}
+.names,.section h2,.script,.footer{color:#713d4d;text-shadow:0 1px 0 #fff}
+.names{letter-spacing:1px}
+.amp{color:#a47b3e}
+.section{border-top:1px solid #d9c5a4}
+.countdown b{color:#4b2937;font-weight:600}
+.map{background:#4b2937;color:#fff8ed;border:1px solid #b18a4b}
+.confirm{background:#713d4d;color:#fff8ed;box-shadow:0 8px 18px #713d4d25}
+.event:before{color:#a47b3e}
+.petals{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:20}
+.petal{position:absolute;top:-12vh;width:13px;height:19px;border-radius:80% 10% 80% 10%;background:linear-gradient(145deg,#f5d9dc,#b96e7c);opacity:.78;filter:drop-shadow(0 2px 2px #58303a22);animation:petalFall linear infinite}
+.petal.gold{background:linear-gradient(145deg,#f4e3b5,#b18a4b);width:9px;height:13px}
+@keyframes petalFall{0%{transform:translate3d(0,-10vh,0) rotate(0deg);opacity:0}10%{opacity:.8}50%{transform:translate3d(45px,55vh,0) rotate(300deg)}100%{transform:translate3d(-35px,115vh,0) rotate(650deg);opacity:0}}
+@media(prefers-reduced-motion:reduce){.petal{animation:none;display:none}.open-btn:hover,.confirm:hover{transform:none}}
+
+
+/* Extra luxury details */
+.top-progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,#b18a4b,#713d4d);z-index:50}
+.floating-tools{position:fixed;right:14px;bottom:16px;z-index:40;display:flex;flex-direction:column;gap:9px}
+.tool-btn{border:1px solid #b18a4b;background:#4b2937;color:#fff8ed;border-radius:50%;width:44px;height:44px;box-shadow:0 5px 16px #38202c30;cursor:pointer;font-size:18px}
+.quick-nav{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin:22px auto 0;max-width:390px}
+.quick-nav a{font-family:inherit;font-size:15px;text-decoration:none;color:#5a3440;border:1px solid #c6a66e;border-radius:20px;padding:7px 13px;background:#fffaf2}
+.photo-frame{margin:25px auto 0;max-width:330px;padding:9px;border:1px solid #c6a66e;background:#fff;box-shadow:0 10px 25px #38202c18}
+.photo-placeholder{min-height:145px;display:grid;place-items:center;background:linear-gradient(135deg,#f3e5db,#ead5d3,#f8f0e4);color:#713d4d;font-family:'Great Vibes';font-size:34px}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .8s ease,transform .8s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.music-panel{display:flex;align-items:center;justify-content:center;gap:10px;margin:20px auto 0;color:#51303a;font-size:17px}
+.music-toggle{border:1px solid #b18a4b;border-radius:22px;padding:9px 16px;background:#fff8ed;color:#4b2937;cursor:pointer}
+.music-note{font-size:13px;color:#806a5b}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+
+  .event-detail{display:block;margin-top:7px;color:#9b7850;font-size:.88rem;letter-spacing:.04em;font-style:italic}
+  </style>
+</head>
+<body>
+<div class="top-progress" id="topProgress"></div>
+<div class="floating-tools"><button class="tool-btn" id="topBtn" aria-label="Back to top">↑</button><button class="tool-btn" id="printBtn" aria-label="Print invitation">⌑</button></div>
+<div class="petals" id="petals" aria-hidden="true"></div>
+<section class="envelope-screen" id="cover">
+ <div class="envelope-wrap">
+  <div class="hint">You are cordially invited</div>
+  <div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Open wedding invitation">
+   <div class="flap"></div>
+   <div class="envelope-ornaments" aria-hidden="true">
+    <span class="corner tl">❧</span><span class="corner tr">❧</span>
+    <span class="corner bl">❧</span><span class="corner br">❧</span>
+    <span class="top-flourish">❦ ❧ ❦</span><span class="bottom-flourish">❦ ❧ ❦</span>
+   </div>
+   <div class="seal">♥</div>
+  </div>
+  <button class="open-btn" id="openBtn">OPEN INVITATION ♡</button>
+ </div>
+</section>
+<main id="invitation">
+ <article class="paper">
+  <div class="floral">❀ ✿ ❀ ✿ ❀</div>
+  <div class="bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+  <p class="script intro">Two Souls<br>One destiny<br>A lifetime written by Allah</p>
+  <p class="copy">Dear Friends and Family,<br>Join us for an evening of love, laughter, duas, and unforgettable memories as we begin our forever together.</p>
+  <div class="section">
+   <div class="smallcaps">Wedding Day</div>
+   <div class="date">27 · 09 · 26</div>
+   <div class="names">Muhammad Shahzad</div>
+   <div class="script" style="font-size:32px">Scroll down</div>
+   <div style="font-size:35px;margin-top:10px">🦢 ♡ 🦢</div>
+  </div>
+  <nav class="quick-nav" aria-label="Invitation sections">
+   <a href="#celebration">Date</a><a href="#schedule">Schedule</a><a href="#venue">Venue</a><a href="#rsvp">RSVP</a>
+  </nav>
+  
+  <div class="music-panel"><button class="music-toggle" id="musicToggle">♫ Play soft music</button><span class="music-note">Tap to enable music if you add an audio file</span></div>
+  <div class="section reveal" id="celebration">
+   <h2>The Celebration Begins</h2>
+   <div class="countdown" id="countdown">
+    <div><b id="days">3</b><span>Days</span></div><div><b id="hours">72</b><span>Hours</span></div><div><b id="minutes">4,320</b><span>Minutes</span></div><div><b id="seconds">259,200</b><span>Seconds</span></div>
+   </div>
+  </div>
+  <div class="section reveal" id="schedule">
+   <h2>Wedding Celebration Schedule</h2>
+   <p class="copy">Three beautiful days of celebration</p>
+   <div class="timeline">
+    <div class="event"><time>27 September 2026</time><span>Mehndi Ceremony</span><small class="event-detail">Evening · 7:00 PM</small></div>
+    <div class="event"><time>28 September 2026</time><span>Barat Ceremony</span><small class="event-detail">Morning · 8:00 AM</small></div>
+    <div class="event"><time>29 September 2026</time><span>Walima Reception</span><small class="event-detail">1:00 PM – 5:00 PM</small></div>
+   </div>
+  </div>
+  <div class="section reveal" id="venue">
+   <h2>Venue</h2>
+   <p class="address"><strong>Sofia Hotel &amp; Restaurant</strong><br>Mianwali–Muzaffargarh Road<br>Chowk Azam, District Layyah<br>Punjab, Pakistan</p>
+   <a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Sofia+Hotel+%26+Restaurant%2C+Mianwali-Muzaffargarh+Road%2C+Chowk+Azam%2C+Layyah%2C+Pakistan">Open in Google Maps ↗</a>
+  </div>
+  <div class="section">
+   <h2>Dress Code</h2>
+   <p class="note">You may wear whatever you like; it makes no difference to us. There is no dress code restriction—feel free to wear anything you prefer.</p>
+   <h2 style="margin-top:30px">Gift Preference</h2>
+   <p class="note">Kindly, no boxed gifts please.</p>
+  </div>
+  <div class="section reveal" id="rsvp">
+   <h2>Confirm Your Attendance</h2>
+   <p class="copy">We look forward to celebrating this special day with you.</p>
+   <a class="confirm" href="mailto:?subject=Wedding%20RSVP%20-%20Muhammad%20Shahzad&body=I%20would%20like%20to%20confirm%20my%20attendance.">RSVP ♡</a>
+  </div>
+  <div class="footer">With love, Muhammad Shahzad</div><p class="smallcaps" style="color:#806a5b;margin-top:12px">A day to remember · A lifetime to cherish</p>
+  <div class="floral" style="margin-top:24px">❀ ✿ ❀ ✿ ❀</div>
+ </article>
+</main>
+<script>
+
+const progress=document.getElementById('topProgress');
+window.addEventListener('scroll',()=>{
+  const max=document.documentElement.scrollHeight-window.innerHeight;
+  progress.style.width=(max>0?(window.scrollY/max*100):0)+'%';
+});
+document.getElementById('topBtn').addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+document.getElementById('printBtn').addEventListener('click',()=>window.print());
+const revealEls=document.querySelectorAll('.reveal');
+if('IntersectionObserver' in window){
+ const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{
+  if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);}
+ }),{threshold:.12});
+ revealEls.forEach(el=>observer.observe(el));
+}else{revealEls.forEach(el=>el.classList.add('visible'));}
+document.getElementById('musicToggle').addEventListener('click',()=>{
+ alert('To add real background music, place an MP3 file beside this HTML file and I can connect it to this button.');
+});
+
+
+const petalLayer=document.getElementById('petals');
+if(petalLayer && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+  for(let i=0;i<22;i++){
+    const p=document.createElement('span');
+    p.className='petal'+(i%5===0?' gold':'');
+    p.style.left=(Math.random()*100)+'%';
+    p.style.animationDuration=(9+Math.random()*12)+'s';
+    p.style.animationDelay=(-Math.random()*18)+'s';
+    p.style.transform='rotate('+(Math.random()*360)+'deg)';
+    petalLayer.appendChild(p);
+  }
+}
+
+const cover=document.getElementById('cover'),env=document.getElementById('envelope'),main=document.getElementById('invitation');
+function openInvite(){env.classList.add('open');setTimeout(()=>{cover.style.display='none';main.style.display='block';window.scrollTo(0,0)},850)}
+document.getElementById('openBtn').addEventListener('click',openInvite);env.addEventListener('click',openInvite);env.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openInvite()}});
+</script>
+</body></html>
